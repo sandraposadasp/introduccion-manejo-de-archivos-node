@@ -38,3 +38,7 @@ function eliminarNota(titulo) {
     console.log('No hay notas para eliminar.');
   }
 }
+
+agregarNota('Compras', 'Comprar leche y pan.');
+listarNotas();
+// eliminarNota('Compras');
