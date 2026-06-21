@@ -15,3 +15,12 @@ const nuevaNota = { titulo, contenido };
   console.log('Nota agregada con éxito.');
 }
 
+function listarNotas() {
+  if (fs.existsSync(filePath)) {
+    const data = fs.readFileSync(filePath, 'utf8');
+    const notas = JSON.parse(data);
+    console.log(notas); 
+  } else {
+    console.log('No hay notas guardadas.');
+  }
+}
